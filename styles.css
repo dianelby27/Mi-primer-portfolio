@@ -3,17 +3,25 @@
   margin: 0;
   padding: 0;
 }
-
+:root{
+  --color-primary: #222323;
+  --color-secundary:#666666;
+  --color-tertiary: #333333;
+  --color-background: #eff6fd;
+  --color-background_2: #1a1a1a;
+  --color: #2563eb;
+  --color-white: #ffffff; 
+}
 body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #333333;
-  background-color: #ffffff;
+  color: var(--color-tertiary);
+  background-color: var(--color-w);
 }
 
 h1,h2,h3,h4{
-  color: black
+  color: var(--color-primary)
 }
 h1 {
   font-size: 32px;
@@ -44,15 +52,15 @@ strong {
 }
 
 a{
-  color: black;
+  color: var(--color-primary);
 }
 
 /* HEADER */
 
 .header{
-  background-color: #f8f9fa;
+  background-color: var(--color-background);
   padding: 24px 0 ;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #2563eb;
 }
 .header__container {
   max-width: 1200px;
@@ -62,15 +70,19 @@ a{
 
 .header__brand{
   text-align: center;
-  margin-bottom: 24PX;
+  margin-bottom: 24px;
+
 }
 .header__name{
-  color: #000000;
+  color: var(--color-primary);
   margin-bottom: 8px;
 }
 .header__tagline{
+  position: relative;
+  bottom: 12px;
   font-size: 14px;
-  color: #8b8b8b;}
+  color: var(--color-secundary);
+}
 
 /* NAVEGACION*/
 
@@ -89,15 +101,15 @@ a{
 .nav__link{
   display: inline-block;
   padding: 8px 12px;
-  color: #000000;
+  color: var(--color-primary);
   font-weight: 500;
   text-decoration: none;
 }
 .nav__link:hover{
-  color: #2563eb;
+  color: var(--color);
 }
 .nav__link--active{
-  color: #2563eb;
+  color: var(--color);
   font-weight: bold;
 }
 
@@ -112,7 +124,7 @@ main{
 /* HERO SECTION*/
 
 .hero{
-  background-color: #f0f4f8;
+  background: linear-gradient(to bottom, #a7d7ff, #ffffff);
   height: auto;
   text-align: center;
   margin-bottom: 40px;
@@ -207,7 +219,7 @@ main{
 
 .quote{
   position: relative;
-  background-color:#f8f9fa;
+  background: linear-gradient(to bottom, #a7d7ff, #ffffff);
   border-left: 3px solid #2563eb;
   padding: 35px;
   text-align: start;
@@ -218,6 +230,8 @@ main{
   font-weight: 600;
 }
 .quote__author{
+  position: relative;
+  bottom: 20px;
   position: absolute;
   right: 20px;
 }
@@ -231,7 +245,7 @@ main{
 }
 .values__item{
   text-align: start;
-  background-color: #f8f9fa;
+  background: linear-gradient(to bottom, #a7d7ff, #ffffff);
   border: 2px solid #ededed;
   padding: 17px;
   margin: 10px;
@@ -278,7 +292,7 @@ span{
   border: 1px solid #ededed;
 }
 .project{
-  background-color: white;
+  background: linear-gradient(to bottom, #a7d7ff, #ffffff);
   padding: 32px;
   margin-bottom:32px;
   
