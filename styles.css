@@ -17,7 +17,7 @@ body{
   font-size: 16px;
   line-height: 1.6;
   color: var(--color-tertiary);
-  background-color: var(--color-w);
+  background-color: var(--color-white);
 }
 
 h1,h2,h3,h4{
